@@ -1,7 +1,7 @@
 {
-  "name": "handlebars-loader",
+  "name": "handlebars-loader-neo",
   "version": "1.0.0",
-  "description": "Handlebars Webpack loader designed to work with html-loader.",
+  "description": "Handlebars Webpack loader.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,6 +21,11 @@
     "loader-runner": "^4.2.0"
   },
   "dependencies": {
-    "loader-utils": "^2.0.0"
+    "async": "^3.2.0",
+    "fastparse": "^1.1.2",
+    "handlebars": "^4.7.6",
+    "loader-utils": "^2.0.0",
+    "object-assign": "^4.1.1",
+    "underscore": "^1.12.0"
   }
 }
