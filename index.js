@@ -1,6 +1,6 @@
 const _ = require('underscore')
 const handlebars = require("handlebars")
-const HandlebarsLoader = require('./lib/HandlebarsLoader')
+const Loader = require('./lib/Loader')
 const LoaderJavaScriptCompiler
   = require('./lib/LoaderJavaScriptCompiler')
 
@@ -24,14 +24,11 @@ function setup_handlebars_environment
 function handlebars_loader
   ( source
   ) {
-    const effectiveConfig
-      = HandlebarsLoader.get_effective_config
-          ( HandlebarsLoader.get_loader_config(this)
-          )
+    const effectiveConfig = Loader.get_effective_config(this)
 
 
     const handlebarsLoader
-      = HandlebarsLoader.create
+      = Loader.create
           ( { effectiveConfig        : effectiveConfig
             , webpackLoaderContext   : this
             , foundPartials          : {}
@@ -53,7 +50,7 @@ function handlebars_loader
 
 
     const resultsCallback = this.async()
-    HandlebarsLoader
+    Loader
       .run(source, handlebarsLoader)
       .then( compileResults => resultsCallback(null, compileResults) )
       .catch( compileError => resultsCallback(compileError) )
