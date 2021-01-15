@@ -1,23 +1,7 @@
 const _ = require('underscore')
 const handlebars = require("handlebars")
 const Loader = require('./lib/Loader')
-const LoaderJavaScriptCompiler
-  = require('./lib/LoaderJavaScriptCompiler')
-
-
-function setup_handlebars_environment
-  ( handlebarsLoader
-  ) {
-    const handlebarsInstance = handlebars.create()
-    handlebarsInstance.JavaScriptCompiler
-      = function
-          () {
-            return new LoaderJavaScriptCompiler(handlebarsLoader)
-          }
-
-
-    return handlebarsInstance
-  }
+const Handlebars = require('./lib/Handlebars')
 
 
 
@@ -46,7 +30,7 @@ function handlebars_loader
           )
 
     handlebarsLoader.handlebarsInstance
-      = setup_handlebars_environment(handlebarsLoader)
+      = Handlebars.setup_runtime(handlebarsLoader)
 
 
     const resultsCallback = this.async()
