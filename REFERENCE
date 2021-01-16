@@ -1,0 +1,35 @@
+
+Reference
+
+This file contains a list of references to external documentation, signatures, definitions etc. that
+are mentioned throughout the codebase. Each item has the citation reference to the resource, followed
+by the inline citation that should be used to reference the item in your own code documentaion. This
+file exists to reduce clutter in the source files from long URLs. The citations were created using
+"https://www.citationmachine.net/apa/cite-a-website/new".
+
+
+[1] Handlebars-Lang. (2019, December 03). Handlebars Pre-compiler Definition. Retrieved January 16, 2021, from https://github.com/handlebars-lang/handlebars.js/blob/071003b89c0c709f24a17d89d58ce226ecf6a29b/lib/handlebars/compiler/compiler.js#L444 -- (Handlebars-Lang, Handlebars Pre-compiler Definition 2019 #L444)
+
+[2] Handlebars-Lang. (2019, December 03). Handlebars Runtime Definition. Retrieved January 16, 2021, from https://github.com/handlebars-lang/handlebars.js/blob/master/lib/handlebars.js -- (Handlebars-Lang, Handlebars Runtime Definition 2019)
+
+[3] Handlebars-Lang. (n.d.). Handlebars PrecompileOptions Signature. Retrieved January 16, 2021, from https://github.com/handlebars-lang/handlebars.js/blob/071003b89c0c709f24a17d89d58ce226ecf6a29b/types/index.d.ts#L241 -- (Handlebars-Lang, Handlebars PrecompileOptions Signature #L241)
+
+[4] Handlebars-Lang. (2020, February 04). Hbs.AST.Program Type Signature. Retrieved January 16, 2021, from https://github.com/handlebars-lang/handlebars.js/blob/071003b89c0c709f24a17d89d58ce226ecf6a29b/types/index.d.ts#L285 -- (Handlebars-Lang, 2020 #285)
+
+[5] Handlebars-Lang. (n.d.). TemplateSpecification Type signature. Retrieved January 16, 2021, from https://github.com/handlebars-lang/handlebars.js/blob/071003b89c0c709f24a17d89d58ce226ecf6a29b/types/index.d.ts#L205 -- (Handlebars-Lang, TemplateSpecification Type signature #L205)
+
+[6] Webpack Loader Interface. (n.d.). Retrieved January 16, 2021, from https://webpack.js.org/api/loaders/ -- (Webpack Loader Interface)
+
+[7] Handlebars-Lang. (2019, December 03). Handlebars Parser Definition. Retrieved January 16, 2021, from https://github.com/handlebars-lang/handlebars.js/blob/071003b89c0c709f24a17d89d58ce226ecf6a29b/lib/handlebars/compiler/base.js#L29 -- (Handlebars-Lang, Handlebars Parser Definition 2019 #L29)
+
+[8] Handlebars-Lang. (2020, February 04). Handlebars Parser Type Signature. Retrieved January 16, 2021, from https://github.com/handlebars-lang/handlebars.js/blob/071003b89c0c709f24a17d89d58ce226ecf6a29b/types/index.d.ts#L74 -- (Handlebars-Lang, Handlebars Parser Type Signature 2020 #L74)
+
+[9] Handlebars-Lang. (2019, December 03). Handlebars Runtime Definition. Retrieved January 16, 2021, from https://github.com/handlebars-lang/handlebars.js/blob/master/lib/handlebars.js -- (Handlebars-Lang, Handlebars Runtime Definition 2019)
+
+[10] Handlebars-Lang. (2020, February 04). Handlebars ParseOptions Type Signature. Retrieved January 16, 2021, from https://github.com/handlebars-lang/handlebars.js/blob/071003b89c0c709f24a17d89d58ce226ecf6a29b/types/index.d.ts#L53 -- (Handlebars-Lang, Handlebars ParseOptions Type Signature 2020 #L53)
+
+[11] Webpack Loader Interface "emitError" Docs. (n.d.). Retrieved January 16, 2021, from https://webpack.js.org/api/loaders/#thisemiterror -- (Webpack Loader Interface "emitError" Docs #thisemitError)
+
+[12] Loader-utils "getOptions" Docs. (n.d.). Retrieved January 16, 2021, from https://www.npmjs.com/package/loader-utils#getoptions -- (loader-utils "getOptions" Docs #getOptions)
+
+[13] Webpack Loader Interface "resolve" Docs. (n.d.). Retrieved January 16, 2021, from https://webpack.js.org/api/loaders/#thisresolve -- (Webpack Loader Interface "resolve" Docs #thisresolve)
