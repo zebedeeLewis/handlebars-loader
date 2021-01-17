@@ -33,3 +33,11 @@ file exists to reduce clutter in the source files from long URLs. The citations 
 [12] Loader-utils "getOptions" Docs. (n.d.). Retrieved January 16, 2021, from https://www.npmjs.com/package/loader-utils#getoptions -- (loader-utils "getOptions" Docs #getOptions)
 
 [13] Webpack Loader Interface "resolve" Docs. (n.d.). Retrieved January 16, 2021, from https://webpack.js.org/api/loaders/#thisresolve -- (Webpack Loader Interface "resolve" Docs #thisresolve)
+
+[14] Handlebars-Lang. (n.d.). SourceNode Implementation. Retrieved January 17, 2021, from https://github.com/handlebars-lang/handlebars.js/blob/071003b89c0c709f24a17d89d58ce226ecf6a29b/lib/handlebars/compiler/code-gen.js#L20 -- (Handlebars-Lang, SourceNode Implementation #L20)
+
+[15] SourceNode Docs "source-map" Package. (n.d.). Retrieved January 17, 2021, from https://www.npmjs.com/package/source-map#sourcenode -- (SourceNode Docs "source-map" Package #sourcenode)
+
+[16] Handlebars-Lang. (n.d.). Handlebars JavaScriptCompiler.appendToBuffer Implementation. Retrieved January 17, 2021, from https://github.com/handlebars-lang/handlebars.js/blob/071003b89c0c709f24a17d89d58ce226ecf6a29b/lib/handlebars/compiler/javascript-compiler.js#L28 -- (Handlebars-Lang, Handlebars JavaScriptCompiler.appendToBuffer Implementation #L28)
+
+[17] Handlebars-Lang. (n.d.). Handlebars JavaScriptCompiler Implementation. Retrieved January 17, 2021, from https://github.com/handlebars-lang/handlebars.js/blob/071003b89c0c709f24a17d89d58ce226ecf6a29b/lib/handlebars/compiler/javascript-compiler.js -- (Handlebars-Lang, Handlebars JavaScriptCompiler Implementation )
