@@ -14,7 +14,8 @@ const Utils = require('./lib/Utils')
  * @param {Loader} loaderAPI
  * @returns {Loader.Config}
  *
- * @throws {Error} see reference #12 for loaderUtils.getOptions docs
+ * @throws {Error} see loaderUtils.getOptions docs (loader-utils
+ * "getOptions" Docs #getOptions)
  */
 function get_effective_config
   ( loaderAPI
