@@ -25,6 +25,9 @@ function get_effective_config
           } = loaderAPI
 
 
+    // see loaderUtils.getOptions docs (loader-utils "getOptions" Docs
+    // #getOptions) and loaderUtils.parseQuery docs
+    // (LoaderUtils.parseQuery Documentation #parsequery)
     const options
       = { ... cloneDeep( loaderUtils.getOptions(loaderAPI) )
         , ... ( resourceQuery
