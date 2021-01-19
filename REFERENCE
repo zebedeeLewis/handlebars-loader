@@ -41,3 +41,5 @@ file exists to reduce clutter in the source files from long URLs. The citations 
 [16] Handlebars-Lang. (n.d.). Handlebars JavaScriptCompiler.appendToBuffer Implementation. Retrieved January 17, 2021, from https://github.com/handlebars-lang/handlebars.js/blob/071003b89c0c709f24a17d89d58ce226ecf6a29b/lib/handlebars/compiler/javascript-compiler.js#L28 -- (Handlebars-Lang, Handlebars JavaScriptCompiler.appendToBuffer Implementation #L28)
 
 [17] Handlebars-Lang. (n.d.). Handlebars JavaScriptCompiler Implementation. Retrieved January 17, 2021, from https://github.com/handlebars-lang/handlebars.js/blob/071003b89c0c709f24a17d89d58ce226ecf6a29b/lib/handlebars/compiler/javascript-compiler.js -- (Handlebars-Lang, Handlebars JavaScriptCompiler Implementation )
+
+[18] Loader-utils. (n.d.). LoaderUtils.parseQuery Documentation. Retrieved January 18, 2021, from https://www.npmjs.com/package/loader-utils#parsequery -- (LoaderUtils.parseQuery Documentation #parsequery)
