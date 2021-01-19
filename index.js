@@ -83,46 +83,21 @@ function handlebars_loader
   ) {
     if (this.cacheable) { this.cacheable() }
 
-
-    const effectiveConfig = get_effective_config(this)
-
     const handlebarsLoader
       = Loader.create
-          ( { effectiveConfig : effectiveConfig
+          ( { effectiveConfig : get_effective_config(this)
             , loaderAPI       : this
             , source          : source
             }
           )
 
-    const resultsCallback = this.async()
+    const loaderOrError = Loader.run(handlebarsLoader)
 
-
-    Loader
-      .run(handlebarsLoader)
-      .then
-        ( _handlebarsLoader => {
-            resultsCallback
-              ( null
-              , Loader.Output.default_format
-                  ( _handlebarsLoader
-                  )
-              )
-          }
-        )
-      .catch
-        ( error => {
-            if( effectiveConfig.failLoudly ) {
-              resultsCallback(error)
-            } else {
-              resultsCallback
-                ( null
-                , Loader.Output.default_format
-                    ( _handlebarsLoader
-                    )
-                )
-            }
-          }
-        )
+    if( _.isError(loaderOrError) ) {
+      this.callback( loaderOrError )
+    } else {
+      this.callback( null, loaderOrError.results )
+    }
   }
 
 
