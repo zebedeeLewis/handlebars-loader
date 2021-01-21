@@ -83,6 +83,8 @@ function handlebars_loader
   ) {
     if (this.cacheable) { this.cacheable() }
 
+    const done = this.async()
+
     const handlebarsLoader
       = Loader.create
           ( { effectiveConfig : get_effective_config(this)
@@ -91,13 +93,23 @@ function handlebars_loader
             }
           )
 
-    const loaderOrError = Loader.run(handlebarsLoader)
 
-    if( _.isError(loaderOrError) ) {
-      this.callback( loaderOrError )
-    } else {
-      this.callback( null, loaderOrError.results )
-    }
+    Loader.init
+      ( handlebarsLoader
+      )
+    .then
+      ( Loader.run
+      )
+    .then
+      ( loaderOrError => {
+          if( _.isError(loaderOrError) ) {
+            done( loaderOrError )
+          } else {
+            done( null, loaderOrError.results )
+          }
+        }
+      )
+    .catch( error => this.callback( error ) )
   }
 
 
