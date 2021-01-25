@@ -1,6 +1,6 @@
 {
   "name": "handlebars-loader-neo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Webpack Handlebars loader with configurable input and output formatter.",
   "main": "index.js",
   "scripts": {
