@@ -27,7 +27,6 @@
     "babel-plugin-add-module-exports": "^1.0.4",
     "btoa": "^1.2.1",
     "clone-deep": "^4.0.1",
-    "fastparse": "^1.1.2",
     "handlebars": "^4.7.6",
     "loader-utils": "^2.0.0",
     "object-assign": "^4.1.1",
