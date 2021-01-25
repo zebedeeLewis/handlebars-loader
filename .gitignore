@@ -105,3 +105,4 @@ dist
 
 # random scratch files
 *.scratch.*
+scratch/
