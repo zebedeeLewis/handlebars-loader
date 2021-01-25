@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zebedeeLewis/handlebars-loader.git"
+    "url": "git+https://github.com/zebedeeLewis/handlebars-loader-neo.git"
   },
   "author": "zebedee lewis <zebedeeslewis@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zebedeeLewis/handlebars-loader/issues"
+    "url": "https://github.com/zebedeeLewis/handlebars-loader-new/issues"
   },
-  "homepage": "https://github.com/zebedeeLewis/handlebars-loader#readme",
+  "homepage": "https://github.com/zebedeeLewis/handlebars-loader-new#readme",
   "devDependencies": {
     "jest": "^26.6.3",
     "loader-runner": "^4.2.0"
