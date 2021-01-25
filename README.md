@@ -12,23 +12,38 @@ npm install --save-dev handlebars-loader-neo
 
 Create your template files:
 
-**content.hbs**
+**header.hbs**
 ```html
-<header>
-  <img alt="..." src="./banner.jpg">
-</header>
-<main>
-  ...
-</main>
+<html>
+  <head>
+    <title>My Page</title>
+    ...
+  </head>
+  <body>
+    <nav class="main-nav">
+      ...
+    </nav>
+    <header>
+      <img alt="..." src="./banner.jpg">
+    </header>
+```
+
+**footer.hbs**
+```html
+    <footer>
+      ...
+    </footer>
+  <body>
+</html>
 ```
 
 **index.hbs**
 ```html
-...
-<body>
-  <div id="content">{{> ./content }}  </div>
-</body>
-...
+{{> ./header }}
+<main>
+  ...
+</main>
+{{> ./footer }}
 ```
 
 Import your main template:
@@ -100,7 +115,7 @@ module.exports = {
 | **[`ignorePartials`](#ignorePartials)**       | `{(null\|string\|RegExp\|Array.<(null\|string\|RegExp)>)}` | `null`                                |
 | **[`parseOptions`](#parseOptions)**           | `{Handlebars.ParseOptions}`                                | `{}`                                  |
 | **[`precompileOptions`](#precompileOptions)** | `{Handlebars.PrecompileOptions}`                           | `{}`                                  |
-| **[`compileOptions`](#compileOptions)**       | `{Handlebars.CompileOptions}`                              | `{}`                                  |
+| **[`compileOptions`](#compileOtions)**        | `{Handlebars.CompileOptions}`                              | `{}`                                  |
 | **[`failLoudly`](#failLoudly)**               | `{boolean}`                                                | `true`                                |
 | **[`templateContextFile`](#templateContextFile)** |`{string}`                                              | `''`                                  |
 | **[`inputCompatibility`](#inputCompatibility)** | `{(default\|htmlLoader)}`                                | `'default'`                           |
@@ -131,25 +146,25 @@ Default: `[]`
 Array of helpers that are registered at runtime and should not explicitly be required by webpack.
 
 ### `inlineRequires`
-Type: `{(null\|string\|RegExp\|Array.<(null\|string\|RegExp)>)}`
+Type: `{(null|string|RegExp|Array.<(null|string|RegExp)>)}`
 Default: `null`
 
 Zero or more regular expressions each matching a string to be replaced with a require statement. Each RegExp must contain a named group named "path" that captures the string that should be used as the require statements path.
 
 ### `exclude`
-Type: `{(null\|string\|RegExp\|Array.<(null\|string\|RegExp)>)}`
+Type: `{(null|string|RegExp|Array.<(null|string|RegExp)>)}`
 Default: `null`
 
 Defines zero or more regex that match paths to exclude from resolving. This can be used to prevent helpers from being resolved to modules in the node_modules directory.
 
 ### `logLevel`
-Type: `{(0\|1\|2\|3)}`
+Type: `{(0|1|2|3)}`
 Default: `0`
 
 Toggles logging information. To stay compatible with the original handlebars-loader, setting this value to "true" set the log level to LogLevel.Debug. Setting this value to "false" does nothing. The log level remains as is. Log level 0 is turns logging off, 1 sets logging to "Error", 2 sets logging to "Warning", and 3 sets logging to "Info".
 
 ### `debug`
-Type: `{(0\|1\|2\|3)}`
+Type: `{(0|1|2|3)}`
 Default: `0`
 
 Alias for `logLevel`.
@@ -179,13 +194,13 @@ Default: `[]`
 Defines additional directories to be searched for partials. Allows partials to be defined in a directory and used globally without relative paths.
 
 ### `ignoreHelpers`
-Type: `{(null\|string\|RegExp\|Array.<(null\|string\|RegExp)>)}`
+Type: `{(null|string|RegExp|Array.<(null|string|RegExp)>)}`
 Default: `null`
 
 Prevents matching helpers from being loade at build time. Useful for manually loading partials at runtime.
 
 ### `ignorePartials`
-Type: `{(null\|string\|RegExp\|Array.<(null\|string\|RegExp)>)}`
+Type: `{(null|string|RegExp|Array.<(null|string|RegExp)>)}`
 Default: `null`
 
 Prevents matching partials from being loaded at build time. Useful for manually loading partials at runtime.
@@ -221,7 +236,7 @@ Default: `''`
 The path to a JS file that exports a simple Object to be used as the context when compiling the template.
 
 ### `inputCompatibility`
-Type: `{(default\|htmlLoader)}`
+Type: `{(default|htmlLoader)}`
 Default: `'default'`
 
 Prepares the loader to accept input from different kinds of loader.
@@ -233,4 +248,4 @@ Default: `'default'`
 Format the loader to be passed to another loader.
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://choosealicense.com/licenses/mit/)p
