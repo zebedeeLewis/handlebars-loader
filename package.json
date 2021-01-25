@@ -10,6 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/zebedeeLewis/handlebars-loader-neo.git"
   },
+  "keywords": ["handlebars-loader","handlebars-loader-neo", "html-loader", "webpack", "loader", "hbs", "handlebars", "template"],
   "author": "zebedee lewis <zebedeeslewis@gmail.com>",
   "license": "MIT",
   "bugs": {
