@@ -105,3 +105,6 @@ module.exports = {
 |`templateContextFile` |`{string}` |`''` |The path to a JS file that exports a simple Object to be used as the context when compiling the template. |
 |`inputCompatibility` |`{(default\|htmlLoader)}` |`'default'` |Prepares the loader to accept input from different kinds of loader. |
 |`outputFormat` |`{(default)}` |`'defulat'` |Format the loader to be passed to another loader. |d
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
