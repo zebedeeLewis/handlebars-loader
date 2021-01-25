@@ -23,7 +23,6 @@
   "dependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
-    "async": "^3.2.0",
     "babel-plugin-add-module-exports": "^1.0.4",
     "btoa": "^1.2.1",
     "clone-deep": "^4.0.1",
