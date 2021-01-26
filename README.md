@@ -115,7 +115,6 @@ module.exports = {
 | **[`ignorePartials`](#ignorePartials)**       | `{(null\|string\|RegExp\|Array.<(null\|string\|RegExp)>)}` | `null`                                |
 | **[`parseOptions`](#parseOptions)**           | `{Handlebars.ParseOptions}`                                | `{}`                                  |
 | **[`precompileOptions`](#precompileOptions)** | `{Handlebars.PrecompileOptions}`                           | `{}`                                  |
-| **[`compileOptions`](#compileOtions)**        | `{Handlebars.CompileOptions}`                              | `{}`                                  |
 | **[`failLoudly`](#failLoudly)**               | `{boolean}`                                                | `true`                                |
 | **[`templateContextFile`](#templateContextFile)** |`{string}`                                              | `''`                                  |
 | **[`inputCompatibility`](#inputCompatibility)** | `{(default\|htmlLoader)}`                                | `'default'`                           |
@@ -216,12 +215,6 @@ Type: `{Handlebars.PrecompileOptions}`
 Default: `{}`
 
 Options to pass to the Handlebars precompiler.
-
-### `compileOptions`
-Type: `{Handlebars.CompileOptions}`
-Default: `{}`
-
-Options to pass to the Handlebars compiler.
 
 ### `failLoudly`
 Type: `{boolean}`
