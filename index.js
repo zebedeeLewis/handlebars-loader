@@ -39,38 +39,8 @@ function get_effective_config
     const pathRoot
       =  options.pathRoot || options.rootRelative || context 
 
-    const inlineRequires
-      = _.isArray(options.inlineRequires)
-      ? options.inlineRequires.map( Utils.make_regexp )
-      : Utils.make_regexp(options.inlineRequires)
 
-    const ignorePartials
-      = _.isArray(options.ignorePartials)
-      ? options.ignorePartials.map( Utils.make_regexp )
-      : Utils.make_regexp(options.ignorePartials)
-
-    const ignoreHelpers
-      = _.isArray(options.ignoreHelpers)
-      ? options.ignoreHelpers.map( Utils.make_regexp )
-      : Utils.make_regexp(options.ignoreHelpers)
-
-    const exclude
-      = _.isArray(options.exclude)
-      ? options.exclude.map( Utils.make_regexp )
-      : Utils.make_regexp(options.exclude)
-
-
-    return (
-      Loader.Config.create
-        ( { ...options
-          , pathRoot
-          , inlineRequires
-          , ignorePartials
-          , ignoreHelpers
-          , exclude
-          }
-        )
-    )
+    return Loader.Config.create({ ...options, pathRoot })
   }
 
 
