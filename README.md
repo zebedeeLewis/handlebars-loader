@@ -148,7 +148,7 @@ Array of helpers that are registered at runtime and should not explicitly be req
 Type: `{(null|string|RegExp|Array.<(null|string|RegExp)>)}`
 Default: `null`
 
-Zero or more regular expressions each matching a string to be replaced with a require statement. Each RegExp must contain a named group named "path" that captures the string that should be used as the require statements path.
+Zero or more regular expressions each matching a string to be replaced with a require statement. Each RegExp must contain a named group named "path" that captures the string that should be used as the require statements path. Inserting the string '....' into your array of patterns will cause a default set of patterns to be appended your array of patterns.
 
 ### `exclude`
 Type: `{(null|string|RegExp|Array.<(null|string|RegExp)>)}`
