@@ -161,7 +161,7 @@ module.exports = {
         use: [
           {
             loader: "handlebars-loader-neo",
-            options: { inlineRequires: /<audio\s+.*?src=""\s+.*?>/gi },
+            options: { inlineRequires: /<audio\s+.*?src="(?<path>.*?)"\s+.*?>/gi },
           },
         ],
       },
@@ -187,7 +187,7 @@ module.exports = {
             options: {
               inlineRequires: [ 
                 '....'
-                /<audio\s+.*?src=""\s+.*?>/gi,
+                /<audio\s+.*?src="(?<path>.*?)"\s+.*?>/gi,
               ]
             },
           },
