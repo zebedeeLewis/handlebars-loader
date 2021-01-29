@@ -102,7 +102,6 @@ module.exports = {
 | **[`extensions`](#extensions)**               | `{Array.<string>}`                                         | `['.handlebars', 'hbs', '.hb']`       |
 | **[`rootPath`](#rootPath)**                   | `{string}`                                                 | `The current request context or './'` |
 | **[`rootRelative`](#rootRelative)**           | `{string}`                                                 | `The current request context or './'` |
-| **[`knownHelpers`](#knownHelpers)**           | `{Array<string>}`                                          | `[]`                                  |
 | **[`inlineRequires`](#inlineRequires)**       | `{(null\|string\|RegExp\|Array.<(null\|string\|RegExp)>)}` | `null`                                |
 | **[`exclude`](#exclude)**                     | `{(null\|string\|RegExp\|Array.<(null\|string\|RegExp)>)}` | `null`                                |
 | **[`logLevel`](#logLevel)**                   | `{(0\|1\|2\|3)}`                                           | `0`                                   |
@@ -137,12 +136,6 @@ Type: `{string}`
 Default: `The current request context or './'`
 
 Alias for `rootPath`. For compatibility with `handlebars-loader`
-
-### `knownHelpers`
-Type: `{Array<string>}`
-Default: `[]`
-
-Array of helpers that are registered at runtime and should not explicitly be required by webpack.
 
 ### `inlineRequires`
 Type: `{(null|string|RegExp|Array.<(null|string|RegExp)>)}`
