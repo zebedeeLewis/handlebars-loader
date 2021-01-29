@@ -163,7 +163,6 @@ module.exports = {
             loader: "handlebars-loader-neo",
             options: { inlineRequires: /<audio\s+.*?src=""\s+.*?>/gi },
           },
-          { loader: "html-loader" },
         ],
       },
     ],
@@ -192,7 +191,6 @@ module.exports = {
               ]
             },
           },
-          { loader: "html-loader" },
         ],
       },
     ],
