@@ -103,7 +103,6 @@ module.exports = {
 | **[`rootPath`](#rootPath)**                   | `{string}`                                                 | `The current request context or './'` |
 | **[`rootRelative`](#rootRelative)**           | `{string}`                                                 | `The current request context or './'` |
 | **[`inlineRequires`](#inlineRequires)**       | `{(null\|string\|RegExp\|Array.<(null\|string\|RegExp)>)}` | `null`                                |
-| **[`exclude`](#exclude)**                     | `{(null\|string\|RegExp\|Array.<(null\|string\|RegExp)>)}` | `null`                                |
 | **[`logLevel`](#logLevel)**                   | `{(0\|1\|2\|3)}`                                           | `0`                                   |
 | **[`debug`](#debug)**                         | `{(0\|1\|2\|3)}`                                           | `0`                                   |
 | **[`runtimePath`](#runtimePath)**             | `{string}`                                                 | `'handlebars/runtime'`                |
@@ -198,13 +197,6 @@ module.exports = {
 };
 
 ```
-
-
-### `exclude`
-Type: `{(null|string|RegExp|Array.<(null|string|RegExp)>)}`
-Default: `null`
-
-Defines zero or more regex that match paths to exclude from resolving. This can be used to prevent helpers from being resolved to modules in the node_modules directory.
 
 
 ### `logLevel`
